@@ -6,7 +6,7 @@ import io.vertx.ext.web.Router
 private val logger = Slf4JLoggerFactory.getInstance("main")
 
 fun main(args: Array<String>) {
-
+    logger.info("Starting Server")
     val vertx = Vertx.vertx()
     val httpServer = vertx.createHttpServer()
 
@@ -31,8 +31,6 @@ fun main(args: Array<String>) {
     httpServer
         .requestHandler(router)
         .listen(8091)
-
-    logger.info("cxvxcvxc")
 }
 
 fun checkHealth(): String {
