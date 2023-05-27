@@ -5,7 +5,7 @@ import io.vertx.ext.web.Router
 
 private val logger = Slf4JLoggerFactory.getInstance("main")
 
-fun main(args: Array<String>) {
+fun main() {
     logger.info("Starting Server")
     val vertx = Vertx.vertx()
     val httpServer = vertx.createHttpServer()
